@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NaveenaKota/demo.git"
+    "url": "git+https://https://github.com/MounikaMokamatam/ToDo"
   },
   "dependencies": {
     "@types/react": "^17.0.39",
@@ -20,9 +20,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NaveenaKota/demo/issues"
+    "url": "https://https://github.com/MounikaMokamatam/ToDo"
   },
-  "homepage": "https://github.com/NaveenaKota/demo#readme",
+  "homepage": "https://https://github.com/MounikaMokamatam/ToDo",
   "devDependencies": {
     "nodemon": "^2.0.15"
   }
