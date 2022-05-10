@@ -15,4 +15,4 @@ import Nav from './components/Nav.vue';
 
 <style>
 
-</style>
+</style>    

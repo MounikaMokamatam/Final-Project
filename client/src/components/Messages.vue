@@ -3,12 +3,13 @@
     import { useMessages } from '../models/messages';
 
     const messages = useMessages();
+
     const isOpen = ref(false);
 
 </script>
 
 <template>
-    <!-- <div class="navbar-item has-dropdown" :class="{ 'is-active': isOpen }">
+    <div class="navbar-item has-dropdown" :class="{ 'is-active': isOpen }">
         <a class="navbar-link" @click=" isOpen = !isOpen ">
             <span class="icon">
                 <i class="fas fa-bell"></i>
@@ -22,13 +23,6 @@
                 <button class="delete" @click="messages.close(i)" ></button>
                 {{ x.message }}
             </div>
-        </div>
-    </div> -->
-
-     <div>
-        <div v-for=" (x, i) in messages.notifications" :class="`notification is-${x.type}`">
-            <button class="delete" @click="messages.close(i)" ></button>
-            {{ x.message }}
         </div>
     </div>
 </template>
@@ -44,7 +38,7 @@
     }
     .notification {
         margin: .5rem;
-        width: 100%;
+        width: calc(100% - 1rem);
     }
     .tag {
         position: absolute;

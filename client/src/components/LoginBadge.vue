@@ -1,5 +1,7 @@
 <script setup lang="ts">
-    import session, { Logout } from "../models/session";
+    import { useSession } from "../models/session";
+    const session = useSession();
+
 </script>
 
 <template>
@@ -19,9 +21,9 @@
                 <i>{{ session.user.email }}</i>
             </div>
         </div>
-        <router-link class="button us-primary" @click="Logout()" to = /login>
+        <a class="button is-primary" @click="session.Logout()">
             <strong>Log out</strong>
-        </router-link>
+        </a>
     </div>
 </template>
 
@@ -43,4 +45,4 @@
             object-fit: cover;
         }
     }
-</style>    
+</style>

@@ -1,6 +1,3 @@
-/* B"H
-*/
-
 export interface User {
     firstName: string;
     lastName: string;

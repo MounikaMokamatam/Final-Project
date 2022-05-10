@@ -1,19 +1,18 @@
 <script setup lang="ts">
 
+import { useSession } from "../models/session";
+const session = useSession();
 </script>
 
 <template>
-    <div class="columns is-centered">
-        <div class="column is-half">
-            <div class="section is-medium">
-                <h1 class="title">
-                    TODO app , the AWS Project created by Naveena Kota
-                </h1>
-               </div>
-        </div>
+    <div class="section homePagebg">
+        <h1 v-if="!session.user" class="title">Welcome, This is the login page</h1>
+        <h1 v-else class="title">Welcome, {{session.user.firstName}} {{session.user.firstName}}</h1> 
     </div>
 </template>
 
 <style scoped>
-
+.title{
+    text-align: center;
+}
 </style>
