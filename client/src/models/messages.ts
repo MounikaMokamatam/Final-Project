@@ -13,7 +13,6 @@ export const useMessages = defineStore('messages', {
         }
     }
 })
-//////////
 
 export interface Notification {
     type: 'success' | 'danger' | 'info' | 'warning';
