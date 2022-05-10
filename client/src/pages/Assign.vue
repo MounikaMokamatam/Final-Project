@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { useSession } from '../models/session';
 import { ref, reactive, onMounted } from 'vue';
-import * as users from "../models/user"
-import { User } from "../models/user";
+import * as users from "../models/users"
+import { User } from "../models/users";
 const session = useSession();
 const currentTab= ref('All');
 const newTaskName = ref('');
@@ -18,15 +18,15 @@ function addTask(){
         assignedUser.value = session.user?.handle
         console.log(assignedUser);
         //console.log(user)
-        user?.userTasks.unshift({ 
+        users?.userTasks.unshift({ 
           task: newTaskName.value,
           dueDate: dueDate.value,
           isCompleted: false,
           assignedBy: assignedUser
         })
-        console.log(user)
+        console.log(users)
         if(session.user?.id+"" == assignedTo.value ){
-            tasks.value = user?.userTasks;
+            tasks.value = users?.userTasks;
         }
         newTaskName.value = ''
         dueDate.value = ''

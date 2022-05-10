@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import session from "../models/session";
 import { ref, reactive, onMounted } from 'vue';
-import * as users from "../models/user"
+import * as users from "../models/users"
 let currentTab= ref('All');
 let newTaskName = ref('');
 let dueDate = ref(''); 

@@ -1,7 +1,7 @@
 
 import router from "../router";
 
-import * as users from "../models/user";
+import * as users from "../models/users";
 import { useMessages } from "./messages";
 import { api } from "./myFetch";
 import { defineStore } from "pinia";

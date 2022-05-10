@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useSession } from '../models/session';
 import { ref, reactive, onMounted } from 'vue';
-import { User } from "../models/user";
+import { User } from "../models/users";
 import {usePosts } from "../models/posts";  
 const session = useSession();
 
